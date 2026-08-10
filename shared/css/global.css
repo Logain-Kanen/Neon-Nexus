@@ -16,7 +16,9 @@ main {
   width: 80vw;
   height: 90vh;
   background-color: rgba(100, 100, 100, 0.4);
-  border: 1px solid white;
+  border: 2px solid white;
   margin: 90px auto;
   border-radius: 20px;
+  padding: 4%;
+  justify-items: center;
 }

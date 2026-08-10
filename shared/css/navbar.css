@@ -9,7 +9,8 @@ nav {
   flex-direction:row;
   align-items:center;
   justify-content: space-between;
-  padding: 0px 100px 0px 50px;
+  padding: 0px 50px 0px 50px;
+  text-shadow: 7px 0px 0px black;
 }
 #nav-icon{
     height: 80%;
@@ -19,8 +20,12 @@ nav {
   border-radius: 10px;
   padding: 5px;
 }
-
-h1
+#nav-right{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav h1
 {
     font-size:48px;
 }
