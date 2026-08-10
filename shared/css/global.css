@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SquareSansSerif";
+}
+@font-face{
+    font-family: "SquareSansSerif";
+    src: url("../../assets/fonts/SquareSansSerif7-o6wA.ttf");
+}
+body {
+  background: linear-gradient(to bottom right, rgb(70, 0, 70), rgb(27, 0, 27));
+  align-content: center;
+}
+main {
+  width: 80vw;
+  height: 90vh;
+  background-color: rgba(100, 100, 100, 0.4);
+  border: 1px solid white;
+  margin: 90px auto;
+  border-radius: 20px;
+}
