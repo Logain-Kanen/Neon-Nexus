@@ -1,0 +1,16 @@
+main{
+    color: cyan;
+}
+.slogan-text{
+    text-shadow: 7px 0px 0px black;
+}
+#slogan-text-2{
+    margin-left: 80px;
+}
+#slogan-text-3{
+    margin-left: 250px;
+}
+#slogan-text-4{
+    margin-left: 340px;
+}
+
