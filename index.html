@@ -10,27 +10,34 @@
   </head>
   <body>
     <nav>
-      <img
-        src="assets/icons/Neon-Nexus-Logo.png"
-        alt="Neon-Nexus"
-        id="nav-icon"
-      />
+      <a href="index.html">
+        <img
+          src="assets/icons/Neon-Nexus-Logo.png"
+          alt="Neon-Nexus"
+          id="nav-icon"
+        />
+      </a>
 
       <h1>Welcome</h1>
       <div id="nav-right">
-        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Menus</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li><a href="pages/menu/">Breakfast</a></li>
+                <li><a href="#">Lunch</a></li>
+                <li><a href="#">Dinner</a></li>
+            </ul>        
+            </li>
+        </ul>
         <h2 id="nav-cart">Cart</h2>
       </div>
     </nav>
 
     <main>
-      <div id="slogan">
-        <h1 class="slogan-text" id="slogan-text-1">Experience</h1>
-        <h1 class="slogan-text" id="slogan-text-2">Tomorrow's</h1>
-        <h1 class="slogan-text" id="slogan-text-3">Flavor</h1>
-        <h1 class="slogan-text" id="slogan-text-4">Today</h1>
-      </div>
-      <div id="featured-items">
+      <h1 id="slogan">Experience <br />Tomorrow's <br />Flavor <br />Today</h1>
+      <h2 id="featured-h2">FEATURED ITEMS</h2>
+      <div id="featured-div">
         <div class="featured-cards">
           <img src="assets/images/placeholder.jpg" alt="" />
           <div class="featured-text">

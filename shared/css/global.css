@@ -5,9 +5,12 @@
   font-family: "SquareSansSerif";
   scroll-behavior: smooth;
 }
-@font-face{
-    font-family: "SquareSansSerif";
-    src: url("../../assets/fonts/SquareSansSerif7-o6wA.ttf");
+@font-face {
+  font-family: "SquareSansSerif";
+  src: url("../../assets/fonts/SquareSansSerif7-o6wA.ttf");
+}
+a{
+  text-decoration: none;
 }
 body {
   background: linear-gradient(to bottom right, rgb(70, 0, 70), rgb(27, 0, 27));
