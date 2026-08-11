@@ -1,5 +1,10 @@
-
-
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-color: white;
+}
 
 .container-featured
 {
@@ -60,10 +65,10 @@ main
 
 .normal-items
 {
-    border: 1px solid black;
+    margin-top:30px;
     display:flex;
     flex-direction:column;
-    gap:125px;
+    gap:75px;
 }
 
 
@@ -71,6 +76,32 @@ main
 {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
     gap:16px;
-    border: 1px solid white;
+    border: 3px solid white;
+    width: 900px;
+    height:300px;
+    align-items:center;
+    border-radius:8px;
+    padding:20px;
 }
+
+.normal-items > section > .item-cards
+{
+    border: 1.5px solid white;
+    border-radius: 4px;
+    width: 375px;
+    height: 250px;
+}
+
+.item-cards
+{
+    transition: transform 0.5 ease-in-out
+}
+
+.item-cards:hover
+{
+    transform: translateY(-4px);
+}
+
+
