@@ -1,40 +1,39 @@
-main{
-    color: cyan;
+main {
+  color: cyan;
 }
-#slogan{
-    margin-bottom: 50px;
+#slogan {
+  margin-bottom: 5%;
+  text-align: center;
+  text-shadow: 7px 0px 0px black;
 }
-.slogan-text{
-    text-shadow: 7px 0px 0px black;
+.slogan-text {
+  text-shadow: 7px 0px 0px black;
 }
-#slogan-text-2{
-    margin-left: 80px;
+#featured-div {
+  background-color: rgba(50, 50, 50, 0.6);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  border: 2px solid white;
+  border-radius: 10px;
+  flex-wrap: wrap;
 }
-#slogan-text-3{
-    margin-left: 250px;
+#featured-h2 {
+  font-size: 2em;
+  text-shadow: 7px 0px 0px black;
+  margin-bottom: 40px;
 }
-#slogan-text-4{
-    margin-left: 340px;
+.featured-cards {
+  height: 200px;
+  width: 30%;
+  /* border: 2px solid white; */
+  display: flex;
+  font-size: 0.8em;
+  gap: 10px;
 }
-#featured-items{
-    background-color: rgba(50,50,50,0.6);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-.featured-cards{
-    height: 200px;
-    width: 30%;
-    /* border: 2px solid white; */
-    display: flex;
-    font-size: 0.8em;
-    gap: 10px;
-}
-.featured-cards img{
-    object-fit: cover;
-    width: 150px;
+.featured-cards img {
+  object-fit: cover;
+  width: 150px;
 }
