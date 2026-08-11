@@ -3,10 +3,11 @@ nav {
   height: 9%;
   background-color: transparent;
   color: white;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: absolute;
+  align-content: center;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
   text-shadow: 7px 0px 0px black;
