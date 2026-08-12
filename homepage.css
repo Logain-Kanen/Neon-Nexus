@@ -2,14 +2,14 @@ main {
   color: cyan;
 }
 #slogan {
-  margin-bottom: 5%;
   text-align: center;
   text-shadow: 7px 0px 0px black;
+  color: white;
 }
 .slogan-text {
   text-shadow: 7px 0px 0px black;
 }
-#featured-div {
+.main-div {
   background-color: rgba(50, 50, 50, 0.6);
   width: 100%;
   display: flex;
@@ -19,8 +19,9 @@ main {
   border: 2px solid white;
   border-radius: 10px;
   flex-wrap: wrap;
+  margin-top: 5vh;
 }
-#featured-h2 {
+.main-h2 {
   font-size: 2em;
   text-shadow: 7px 0px 0px black;
   margin-bottom: 40px;
@@ -36,4 +37,7 @@ main {
 .featured-cards img {
   object-fit: cover;
   width: 150px;
+}
+main h2{
+    margin-top: 5vh;
 }

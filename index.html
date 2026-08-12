@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="shared/css/global.css" />
     <link rel="stylesheet" href="shared/css/navbar.css" />
     <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="shared/css/footer.css" />
+    <script src="homepage.js" defer></script>
+    <script src="shared/js/global.js" defer></script>
   </head>
   <body>
     <nav>
@@ -21,23 +24,23 @@
       <h1>Welcome</h1>
       <div id="nav-right">
         <ul>
-            <li><a href="#">Menus</a>
+          <li>
+            <a href="#">Menus</a>
             <!-- First Tier Drop Down -->
             <ul>
-                <li><a href="pages/menu/">Breakfast</a></li>
-                <li><a href="#">Lunch</a></li>
-                <li><a href="#">Dinner</a></li>
-            </ul>        
-            </li>
+              <li><a href="pages/menu/breakfast/index.html">Breakfast</a></li>
+              <li><a href="pages/menu/lunch/index.html">Lunch</a></li>
+              <li><a href="pages/menu/dinner/index.html">Dinner</a></li>
+            </ul>
+          </li>
         </ul>
-        <h2 id="nav-cart">Cart</h2>
+        <h2 id="nav-cart" onclick="openCart()">Cart</h2>
       </div>
     </nav>
-
     <main>
       <h1 id="slogan">Experience <br />Tomorrow's <br />Flavor <br />Today</h1>
-      <h2 id="featured-h2">FEATURED ITEMS</h2>
-      <div id="featured-div">
+      <h2 class="main-h2">FEATURED ITEMS</h2>
+      <div class="main-div">
         <div class="featured-cards">
           <img src="assets/images/placeholder.jpg" alt="" />
           <div class="featured-text">
@@ -67,6 +70,25 @@
               accusamus.
             </p>
           </div>
+        </div>
+      </div>
+      <h2 class="main-h2">ABOUT</h2>
+      <div class="main-div"></div>
+      <div id="popup-div">
+        <div id="cart-items"></div>
+        <div
+          id="close-btn"
+          class="cart-btn"
+          onclick="document.getElementById('popup-div').style.display = 'none'"
+        >
+          Close
+        </div>
+        <div
+          id="to-checkout"
+          class="cart-btn"
+          onclick="window.location.replace('pages/checkout/index.html')"
+        >
+          To Checkout
         </div>
       </div>
     </main>

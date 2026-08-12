@@ -3,13 +3,13 @@ nav {
   height: 9%;
   background-color: transparent;
   color: white;
-  position: absolute;
+  position: fixed;
   align-content: center;
   display:flex;
   flex-direction:row;
   align-items:center;
   justify-content: space-between;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 5% 0px 5%;
   text-shadow: 7px 0px 0px black;
 }
 nav a {
@@ -27,13 +27,14 @@ nav a {
 #nav-right {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 5%;
 }
 nav h1 {
   font-size: 48px;
 }
 #nav-cart {
   font-size: 32px;
+  cursor: pointer;
 }
 
 nav ul {
