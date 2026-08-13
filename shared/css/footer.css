@@ -1,0 +1,17 @@
+footer{
+    color: white;
+    width: 100%;
+    border-top: 1px solid white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+#theme-switch{
+    cursor: pointer;
+}
+#theme-switch:hover{
+    color: cyan;
+}
+#theme-switch:active{
+    color: rgb(255, 0, 255);
+}

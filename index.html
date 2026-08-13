@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neon Nexus</title>
+    <title>Neon Nexus - Home</title>
     <link rel="stylesheet" href="shared/css/global.css" />
     <link rel="stylesheet" href="shared/css/navbar.css" />
     <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="shared/css/footer.css" />
     <script src="homepage.js" defer></script>
     <script src="shared/js/global.js" defer></script>
+    <script src="shared/js/footer.js"></script>
   </head>
   <body>
     <nav>
@@ -37,7 +38,7 @@
         <h2 id="nav-cart" onclick="openCart()">Cart</h2>
       </div>
     </nav>
-    <main>
+    <main id="container">
       <h1 id="slogan">Experience <br />Tomorrow's <br />Flavor <br />Today</h1>
       <h2 class="main-h2">FEATURED ITEMS</h2>
       <div class="main-div">
@@ -92,6 +93,10 @@
         </div>
       </div>
     </main>
-    <footer class="footer"><p>&copy; 2026 Neon-Nexus dinner. All rights reserved</p></footer>
+    <footer class="footer">
+      <a href="#top">Back to Top</a>
+      <p id="theme-switch" onclick="themeSwitch()">Switch Themes</p>
+      <p>&copy; 2026 Neon-Nexus diner. All rights reserved</p>
+    </footer>
   </body>
 </html>
