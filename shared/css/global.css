@@ -12,6 +12,18 @@
 a{
   text-decoration: none;
 }
+a:link{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  color: cyan;
+}
+a:active{
+  color: rgb(255, 0, 255);
+}
 body {
   background: linear-gradient(to bottom right, rgb(70, 0, 70), rgb(27, 0, 27));
   align-content: center;
@@ -24,6 +36,7 @@ main {
   border-radius: 20px;
   padding: 4%;
   justify-items: center;
+  color: cyan;
 }
 #popup-div{
   display: none;
@@ -52,4 +65,10 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.cart-btn:hover{
+  color: cyan;
+}
+.cart-btn:active{
+  color: rgb(255, 0, 255);
 }
