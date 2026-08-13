@@ -14,6 +14,8 @@ class menuProduct {
 const breakfastProduct = [];
 const lunchProduct = [];
 const dinnerProduct = [];
+const desertProduct = [];
+const 
 
 for (let i = 0; i < products.length; i++) {
    const currentData = products[i];
