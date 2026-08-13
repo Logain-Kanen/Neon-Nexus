@@ -11,11 +11,11 @@ class menuProduct {
 }
 
 
-const breakfastProduct = [];
-const lunchProduct = [];
-const dinnerProduct = [];
-const desertProduct = [];
-const 
+let breakfastProduct = [];
+let lunchProduct = [];
+let dinnerProduct = [];
+let desertProduct = [];
+let drinksProduct = [];
 
 for (let i = 0; i < products.length; i++) {
    const currentData = products[i];
@@ -33,6 +33,16 @@ for (let i = 0; i < products.length; i++) {
 
    else if (madeProduct.category == "Dinner") {
       dinnerProduct.push(madeProduct);
+   }
+
+   else if(madeProduct.category == "Desert")
+   {
+      desertProduct.push(madeProduct);
+   }
+
+   else if(madeProduct.category == "Drinks")
+   {
+      drinksProduct.push(madeProduct);
    }
 
    else {
