@@ -50,7 +50,7 @@ export const products = [
         price: 14.00,
         itemDescription: "A juicy beef patty stacked with melted cheese, crisp lettuce, and tangy pickles. Served on a toasted bun with a side of secret sauce. Bold, messy, and endlessly satisfying.",
         shortDescription: "A juicy beef patty with cheese, lettuce, pickles, and secret sauce.",
-        featured: false
+        featured: true
     },
 
     {
