@@ -1,6 +1,10 @@
-let main = document.getElementById('main');
+let theme;
+localStorage.setItem("theme", "dark");
 
-
-function themeSwitch(){
-    main.style.color = "black"
+function themeSwitch() {
+  theme = localStorage.getItem("theme");
+  if ((theme = "dark")) {
+    document.querySelector("main").classList.add("light-main");
+    document.querySelector("body").classList.add("light-body")
+  }
 }
