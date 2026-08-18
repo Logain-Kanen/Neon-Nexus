@@ -38,7 +38,7 @@ main {
   justify-items: center;
   color: cyan;
 }
-#popup-div{
+.popup-div{
   display: none;
   background-color: rgba(0, 0, 0);
   border: 2px solid white;

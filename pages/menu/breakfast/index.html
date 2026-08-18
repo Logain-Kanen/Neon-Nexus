@@ -13,9 +13,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="../../../shared/js/global.js" defer></script>
+    <script src="../../../shared/js/footer.js"></script>
   </head>
 
-  <body>
+  <body onload="setTheme()">
     <nav>
       <a href="../../../index.html">
         <img
@@ -45,7 +46,7 @@
     <main>
       <div class="container-featured">
         <h2>Featured Items</h2>
-        <div class="featured-item">
+        <div class="featured-item main-div">
           <img src="/assets/images/Pancake.jpg" alt="Quantum Pancakes" width="400px" height="250px" />
           <div class="contained-featured-item">
             <h3>Quantum Pancakes</h3>
@@ -66,7 +67,7 @@
           </div>
         </div>
 
-        <div class="featured-item">
+        <div class="featured-item main-div">
           <img src="/assets/images/toast.jpg" alt="Circuit French Toast" width="400px" height="250px" />
           <div class="contained-featured-item">
             <h3>Circuit French Toast</h3>
@@ -91,7 +92,7 @@
       </div>
 
       <div class="normal-items">
-        <section class="firstSection">
+        <section class="firstSection ">
           <div class="item-cards">
             <img src="/assets/images/breakfast-bowl.jpg" alt="Neon Breakfast Bowl" width="372px" height="248px"/>
             <h3>Neon Breakfast Bowl</h3>
@@ -247,5 +248,10 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <a href="#top">Back to Top</a>
+      <p id="theme-switch" onclick="themeSwitch()">Switch Themes</p>
+      <p>&copy; 2026 Neon-Nexus diner. All rights reserved</p>
+    </footer>
   </body>
 </html>

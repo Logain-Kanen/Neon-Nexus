@@ -20,6 +20,7 @@ footer {
 .light-main {
     background-color: rgba(255, 255, 255, 0.4);
     color: rgb(113, 0, 113);
+    border: 2px solid black;
 }
 .light-body{
     background: linear-gradient(to bottom right, rgb(0, 149, 223), rgb(13, 0, 110));
@@ -29,8 +30,17 @@ footer {
   text-shadow: 7px 0px 0px rgba(255, 255, 255, 0.5);
 }
 .light-div{
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid black;
 }
 .light-h2{
   text-shadow: 7px 0px 0px rgba(255, 255, 255, 0.5);
+}
+.light-popup{
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+.light-btn{
+  border: 2px solid black;
 }
