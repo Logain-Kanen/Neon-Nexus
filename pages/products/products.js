@@ -55,7 +55,7 @@ export const products = [
 
     {
         category: "Lunch",
-        name: "Al Chicken Sandwich",
+        name: "A.I Chicken Sandwich",
         price: 14.00,
         itemDescription: "A crispy fried chicken breast seasoned with a smoky spice blend, layered with fresh slaw. Served on a soft brioche bun with a tangy house sauce. Every bite is precision-crafted flavor.",
         shortDescription: "Crispy fried chicken with slaw and tangy sauce on a brioche bun.",
