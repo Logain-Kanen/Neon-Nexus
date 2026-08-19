@@ -51,12 +51,12 @@ export const products = [
         price: 14.00,
         itemDescription: "A juicy beef patty stacked with melted cheese, crisp lettuce, and tangy pickles. Served on a toasted bun with a side of secret sauce. Bold, messy, and endlessly satisfying.",
         shortDescription: "A juicy beef patty with cheese, lettuce, pickles, and secret sauce.",
-        featured: false
+        featured: true
     },
 
     {
         category: "Lunch",
-        name: "Al Chicken Sandwich",
+        name: "A.I Chicken Sandwich",
         price: 14.00,
         itemDescription: "A crispy fried chicken breast seasoned with a smoky spice blend, layered with fresh slaw. Served on a soft brioche bun with a tangy house sauce. Every bite is precision-crafted flavor.",
         shortDescription: "Crispy fried chicken with slaw and tangy sauce on a brioche bun.",

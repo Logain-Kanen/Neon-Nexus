@@ -12,7 +12,7 @@
     <script src="shared/js/global.js" defer></script>
     <script src="shared/js/footer.js"></script>
   </head>
-  <body>
+  <body onload="setTheme()">
     <nav>
       <a href="index.html">
         <img
@@ -39,13 +39,13 @@
       </div>
     </nav>
     <main id="container">
-      <h1 id="slogan">Experience <br />Tomorrow's <br />Flavor <br />Today</h1>
+      <h1 class="main-h1">Experience <br />Tomorrow's <br />Flavor <br />Today</h1>
       <h2 class="main-h2">FEATURED ITEMS</h2>
       <div class="main-div">
         <div class="featured-cards">
-          <img src="assets/images/placeholder.jpg" alt="" />
+          <img src="assets/images/Pancake.jpg" alt="Quantum Pancakes" />
           <div class="featured-text">
-            <h2>PLACEHOLDER</h2>
+            <h2>Quantum Pancakes</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
               accusamus.
@@ -53,9 +53,9 @@
           </div>
         </div>
         <div class="featured-cards">
-          <img src="assets/images/placeholder.jpg" alt="" />
+          <img src="assets/images/burger.jpg" alt="Glitch Burger" />
           <div class="featured-text">
-            <h2>PLACEHOLDER</h2>
+            <h2>Glitch Burger</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
               accusamus.
@@ -63,9 +63,9 @@
           </div>
         </div>
         <div class="featured-cards">
-          <img src="assets/images/placeholder.jpg" alt="" />
+          <img src="assets/images/steak.jpg" alt="Plasma Steak" />
           <div class="featured-text">
-            <h2>PLACEHOLDER</h2>
+            <h2>Plasma Steak</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
               accusamus.
@@ -75,12 +75,12 @@
       </div>
       <h2 class="main-h2">ABOUT</h2>
       <div class="main-div"></div>
-      <div id="popup-div">
+      <div class="popup-div">
         <div id="cart-items"></div>
         <div
           id="close-btn"
           class="cart-btn"
-          onclick="document.getElementById('popup-div').style.display = 'none'"
+          onclick="document.querySelector('.popup-div').style.display = 'none'"
         >
           Close
         </div>

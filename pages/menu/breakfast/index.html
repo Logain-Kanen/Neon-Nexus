@@ -13,9 +13,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="../../../shared/js/global.js" defer></script>
+    <script src="../../../shared/js/footer.js"></script>
   </head>
 
-  <body>
+  <body onload="setTheme()">
     <nav>
       <a href="../../../index.html">
         <img
@@ -45,10 +46,10 @@
     <main>
       <div class="container-featured">
         <h2>Featured Items</h2>
-        <div class="featured-item">
-          <img src="" alt="Placeholder" width="400px" height="250px" />
+        <div class="featured-item main-div">
+          <img src="/assets/images/Pancake.jpg" alt="Quantum Pancakes" width="400px" height="250px" />
           <div class="contained-featured-item">
-            <h3>Item Placeholder</h3>
+            <h3>Quantum Pancakes</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -66,10 +67,10 @@
           </div>
         </div>
 
-        <div class="featured-item">
-          <img src="" alt="Placeholder" width="400px" height="250px" />
+        <div class="featured-item main-div">
+          <img src="/assets/images/toast.jpg" alt="Circuit French Toast" width="400px" height="250px" />
           <div class="contained-featured-item">
-            <h3>Item Placeholder</h3>
+            <h3>Circuit French Toast</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -91,10 +92,10 @@
       </div>
 
       <div class="normal-items">
-        <section class="firstSection">
+        <section class="firstSection ">
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/breakfast-bowl.jpg" alt="Neon Breakfast Bowl" width="372px" height="248px"/>
+            <h3>Neon Breakfast Bowl</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -106,8 +107,8 @@
           </div>
 
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/Waffle.jpg" alt="Pixel Waffles" width="372px" height="248px"/>
+            <h3>Pixel Waffles</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -121,8 +122,8 @@
 
         <section class="secondSection">
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/lemonade-.jpg" alt="Blue Screen Lemonade" width="275px" height="248px"/>
+            <h3>Blue Screen Lemonade</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -134,8 +135,8 @@
           </div>
 
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/soda.jpg" alt="RGB Energy Soda" width="275px" height="248px"/>
+            <h3>RGB Energy Soda</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -147,8 +148,8 @@
           </div>
 
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/lighting.jpg" alt="Liquid Lighting" width="275px" height="248px"/>
+            <h3>Liquid Lighting</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -162,8 +163,8 @@
 
         <section class="thirdSection">
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/tea.jpg" alt="Nano Tea" width="275px" height="248px"/>
+            <h3>Nano Tea</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -175,8 +176,8 @@
           </div>
 
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/shake.jpg" alt="Quantum Shake" width="275px" height="248px"/>
+            <h3>Quantum Shake</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -188,8 +189,8 @@
           </div>
 
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/ice-cream.jpg" alt="Pixel Ice Cream" width="275px" height="248px"/>
+            <h3>Pixel Ice Cream</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -203,8 +204,8 @@
 
         <section class="fourthSection">
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/cookie-sundae.jpg" alt="Quantum Cookie Sundae" width="373px" height="248px"/>
+            <h3>Quantum Cookie Sundae</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -216,8 +217,8 @@
           </div>
 
           <div class="item-cards">
-            <img src="" alt="Placeholder" />
-            <h3>Item Placeholder</h3>
+            <img src="/assets/images/om.jfif" alt="Cyber Omelet" width="373px" height="248px"/>
+            <h3>Cyber Omelet</h3>
             <div>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -247,5 +248,10 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <a href="#top">Back to Top</a>
+      <p id="theme-switch" onclick="themeSwitch()">Switch Themes</p>
+      <p>&copy; 2026 Neon-Nexus diner. All rights reserved</p>
+    </footer>
   </body>
 </html>
