@@ -1,4 +1,4 @@
-import { products } from '../products/products.js';
+
 class menuProduct {
    constructor(category, itemName, itemPrice, itemDescription, shortitemDescription, featuredItem) {
       this.category = category;
@@ -49,4 +49,13 @@ for (let i = 0; i < products.length; i++) {
       console.log("Error made while pushing into Category Array");
    }
 }
+
+let cart = [];
+
+function addToCart(){
+   // cart.push(name);
+   console.log("cart");
+}
+
+
 
