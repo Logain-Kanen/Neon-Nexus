@@ -1,5 +1,6 @@
 export const products = [
     {
+        id: "qPancakes",
         category: "Breakfast",
         name: "Quantum Pancakes",
         price: 8.50,
