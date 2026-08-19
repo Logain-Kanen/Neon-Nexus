@@ -1,4 +1,3 @@
-import { products } from '../products/products.js';
 class menuProduct {
    constructor(category, itemName, itemPrice, itemDescription, shortitemDescription, featuredItem) {
       this.category = category;
