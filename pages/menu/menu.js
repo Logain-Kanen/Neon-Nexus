@@ -1,4 +1,3 @@
-
 class menuProduct {
    constructor(category, itemName, itemPrice, itemDescription, shortitemDescription, featuredItem) {
       this.category = category;
@@ -39,6 +38,19 @@ for (let i = 0; i < products.length; i++) {
       console.log("Error made while pushing into Category Array");
    }
 }
+
+let cart = [];
+
+function addToCart(name){
+   for(let i=0;i<products.length;i++){
+      if(name===products[i].name){
+         console.log(products[i]);
+      }
+   }
+   
+}
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
    

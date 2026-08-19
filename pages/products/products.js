@@ -2,7 +2,7 @@ const products = [
     {
         id: "qPancakes",
         category: "Breakfast",
-        name: "Quantum Pancakes",
+        name: "Quantum-Pancakes",
         price: 8.50,
         itemDescription: "Fluffy stacked pancakes infused with a shimmering blueberry compote that seems to shift color with every bite. Made from a proprietary batter blend, they're light, airy, and subtly sweet. Served warm with a drizzle of holographic-shine maple syrup.",
         shortDescription: "Fluffy stacked pancakes with a shimmering blueberry compote and a drizzle of maple syrup.",

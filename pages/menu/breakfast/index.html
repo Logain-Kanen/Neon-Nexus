@@ -13,7 +13,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="../../../shared/js/global.js" defer></script>
-    <script src="../../../shared/js/footer.js"></script>
+    <script src="../../../shared/js/footer.js" defer></script>
+    <script src="../../products/products.js" defer></script>
+    <script src="../menu.js" defer></script>
   </head>
 
   <body onload="setTheme()">
@@ -46,7 +48,7 @@
     <main>
       <div class="container-featured">
         <h2>Featured Items</h2>
-        <div class="item-cardsb">
+        <div class="featured-item main-div">
           <img src="/assets/images/Pancake.jpg" alt="Quantum Pancakes" width="400px" height="250px" />
           <div class="contained-featured-item">
             <h3>Quantum Pancakes</h3>
@@ -58,12 +60,13 @@
               <span class="fa fa-star"></span>
             </div>
 
-            <p>
+            <p class="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
               maiores harum aliquam laudantium nulla unde ad delectus rerum
               vitae quis iste alias, dicta repellendus hic quae reprehenderit
               laboriosam nemo accusamus!
             </p>
+            <button onclick="addToCart(`Quantum-Pancakes`)">Add to cart</button>
           </div>
         </div>
 
@@ -93,7 +96,7 @@
 
       <div class="normal-items">
         <section class="firstSection ">
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/breakfast-bowl.jpg" alt="Neon Breakfast Bowl" width="372px" height="248px"/>
             <h3>Neon Breakfast Bowl</h3>
             <div>
@@ -106,7 +109,7 @@
             <p></p>
           </div>
 
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/Waffle.jpg" alt="Pixel Waffles" width="372px" height="248px"/>
             <h3>Pixel Waffles</h3>
             <div>
@@ -121,7 +124,7 @@
         </section>
 
         <section class="secondSection">
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/lemonade-.jpg" alt="Blue Screen Lemonade" width="275px" height="248px"/>
             <h3>Blue Screen Lemonade</h3>
             <div>
@@ -134,7 +137,7 @@
             <p></p>
           </div>
 
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/soda.jpg" alt="RGB Energy Soda" width="275px" height="248px"/>
             <h3>RGB Energy Soda</h3>
             <div>
@@ -147,7 +150,7 @@
             <p></p>
           </div>
 
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/lighting.jpg" alt="Liquid Lighting" width="275px" height="248px"/>
             <h3>Liquid Lighting</h3>
             <div>
@@ -162,7 +165,7 @@
         </section>
 
         <section class="thirdSection">
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/tea.jpg" alt="Nano Tea" width="275px" height="248px"/>
             <h3>Nano Tea</h3>
             <div>
@@ -175,7 +178,7 @@
             <p></p>
           </div>
 
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/shake.jpg" alt="Quantum Shake" width="275px" height="248px"/>
             <h3>Quantum Shake</h3>
             <div>
@@ -188,7 +191,7 @@
             <p></p>
           </div>
 
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/ice-cream.jpg" alt="Pixel Ice Cream" width="275px" height="248px"/>
             <h3>Pixel Ice Cream</h3>
             <div>
@@ -203,7 +206,7 @@
         </section>
 
         <section class="fourthSection">
-          <div class="item-cardbs">
+          <div class="item-cards">
             <img src="/assets/images/cookie-sundae.jpg" alt="Quantum Cookie Sundae" width="373px" height="248px"/>
             <h3>Quantum Cookie Sundae</h3>
             <div>
@@ -216,7 +219,7 @@
             <p></p>
           </div>
 
-          <div class="item-cardsb">
+          <div class="item-cards">
             <img src="/assets/images/om.jfif" alt="Cyber Omelet" width="373px" height="248px"/>
             <h3>Cyber Omelet</h3>
             <div>
@@ -230,12 +233,12 @@
           </div>
         </section>
       </div>
-      <div id="popup-div">
+      <div class="popup-div">
         <div id="cart-items"></div>
         <div
           id="close-btn"
           class="cart-btn"
-          onclick="document.getElementById('popup-div').style.display = 'none'"
+          onclick="document.querySelector('.popup-div').style.display = 'none'"
         >
           Close
         </div>
@@ -253,5 +256,7 @@
       <p id="theme-switch" onclick="themeSwitch()">Switch Themes</p>
       <p>&copy; 2026 Neon-Nexus diner. All rights reserved</p>
     </footer>
+    
+    
   </body>
 </html>
