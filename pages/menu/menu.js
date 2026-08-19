@@ -52,9 +52,13 @@ for (let i = 0; i < products.length; i++) {
 
 let cart = [];
 
-function addToCart(){
-   // cart.push(name);
-   console.log("cart");
+function addToCart(name){
+   for(let i=0;i<products.length;i++){
+      if(name===products[i].name){
+         console.log(products[i]);
+      }
+   }
+   
 }
 
 
