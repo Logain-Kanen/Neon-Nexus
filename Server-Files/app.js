@@ -7,10 +7,9 @@ const path = require('path');
 const PORT = process.env.PORT || 9000;
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.static(path.join(__dirname, '../Server Files')));
+app.use(express.static(path.join(__dirname, '..')));
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, '..', "index.html"));
 });
 // Connect to MongoDB then Start Server
 async function startServer() {
