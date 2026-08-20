@@ -34,6 +34,7 @@
 .featured-cards img {
   object-fit: cover;
   width: 150px;
+  border: 1px solid white;
 }
 main h2{
     margin-top: 5vh;
