@@ -55,7 +55,8 @@ let cart = [];
 function addToCart(name){
    for(let i=0;i<products.length;i++){
       if(name===products[i].name){
-         console.log(products[i]);
+         cart.push(products[i])
+         console.log(cart)
       }
    }
    

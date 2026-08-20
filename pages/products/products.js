@@ -11,7 +11,7 @@ const products = [
 
     {
         category: "Breakfast",
-        name: "Pixel Waffles",
+        name: "Pixel-Waffles",
         price: 9.00,
         itemDescription: "Crisp waffles with a perfect grid pattern, golden on the outside and soft within. Topped with a scoop of vanilla cream and a dusting of powdered sugar. A playful nod to retro gaming, reimagined for the breakfast table.",
         shortDescription: "Golden grid-pattern waffles topped with vanilla cream and powdered sugar.",
@@ -20,7 +20,7 @@ const products = [
 
     {
         category: "Breakfast",
-        name: "Cyber Omelet",
+        name: "Cyber-Omelet",
         price: 14.71,
         itemDescription: "A vibrant bowl layered with quinoa, roasted vegetables, and a soft poached egg. Bright, colorful, and packed with nutrients to start the day right. Finished with a light citrus drizzle for a fresh pop of flavor.",
         shortDescription: "A vibrant bowl of quinoa, roasted veggies, and a poached egg with citrus drizzle.",
@@ -29,7 +29,7 @@ const products = [
 
     {
         category: "Breakfast",
-        name: "Neon Breakfast Bowl",
+        name: "Neon-Breakfast-Bowl",
         price: 7.50,
         itemDescription: "A vibrant bowl layered with quinoa, roasted vegetables, and a soft poached egg. Bright, colorful, and packed with nutrients to start the day right. Finished with a light citrus drizzle for a fresh pop of flavor.",
         shortDescription: "A vibrant bowl of quinoa, roasted veggies, and a poached egg with citrus drizzle.",
@@ -38,7 +38,7 @@ const products = [
 
     {
         category: "Breakfast",
-        name: "Circuit French Toast",
+        name: "Circuit-French-Toast",
         price: 11.50,
         itemDescription: "Thick-cut brioche soaked in a cinnamon-vanilla custard and grilled to golden perfection. Layered with fresh berries and a dusting of powdered sugar. A comforting classic with a futuristic twist.",
         shortDescription: "Thick brioche French toast with fresh berries and powdered sugar.",
@@ -47,7 +47,7 @@ const products = [
 
     {
         category: "Lunch",
-        name: "Glitch Burger",
+        name: "Glitch-Burger",
         price: 14.00,
         itemDescription: "A juicy beef patty stacked with melted cheese, crisp lettuce, and tangy pickles. Served on a toasted bun with a side of secret sauce. Bold, messy, and endlessly satisfying.",
         shortDescription: "A juicy beef patty with cheese, lettuce, pickles, and secret sauce.",
