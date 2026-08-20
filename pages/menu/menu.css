@@ -35,7 +35,9 @@ main {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.item-cards > img {
+.item-cards > img,
+.item-cardsl > img,
+.item-cardsd > img {
   max-width: 90%;
   max-height: 60%;
 }
@@ -47,6 +49,16 @@ main {
 }
 
 .contained-featured-item {
+  padding-top: 2.8%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: larger;
+}
+
+.featured-item > .itemcardsb,
+.featured-item > .item-cardsl,
+.featured-item > .item-cardsd {
   padding-top: 2.8%;
   display: flex;
   flex-direction: column;
@@ -79,17 +91,43 @@ main {
   padding: 20px;
 }
 
-.normal-items > section > .item-cards {
+.normal-items > section > .item-cards,
+.normal-items > section > .item-cardsl,
+.normal-items > section > .item-cardsd {
   border: 1.5px solid white;
   border-radius: 4px;
   width: 375px;
   height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+  gap: 6px;
 }
 
-.item-cards {
+.item-cards,
+.item-cardsl,
+.item-cardsd {
   transition: transform 0.5 ease-in-out;
 }
 
-.item-cards:hover {
+.item-cards:hover,
+.item-cardsl:hover,
+.item-cardsd:hover {
   transform: translateY(-4px);
+}
+
+.item-cards > h3,
+.item-cardsl > h3,
+.item-cardsd > h3 {
+  text-align: center;
+}
+
+.item-cards > p,
+.item-cardsl > p,
+.item-cardsd > p {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
