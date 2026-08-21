@@ -25,11 +25,12 @@ footer {
 .light-body{
     background: linear-gradient(to bottom right, rgb(0, 149, 223), rgb(13, 0, 110));
 }
-.light-slogan{
+.light-h1{
   color: black;
   text-shadow: 7px 0px 0px rgba(255, 255, 255, 0.5);
 }
 .light-div{
+  background-color: rgba(255, 255, 255, 0.4);
   border: 2px solid black;
 }
 .light-h2{

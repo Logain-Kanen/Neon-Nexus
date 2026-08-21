@@ -4,7 +4,7 @@ function setTheme() {
   if (theme == "light") {
     document.querySelector("main").classList.add("light-main");
     document.querySelector("body").classList.add("light-body");
-    document.querySelector(".main-h1").classList.add("light-slogan");
+    document.querySelector(".main-h1").classList.add("light-h1");
     document.querySelector(".popup-div").classList.add("light-popup");
     document.querySelectorAll(".main-div").forEach((e) => {
       e.classList.add("light-div");
@@ -15,10 +15,11 @@ function setTheme() {
     document.querySelectorAll(".cart-btn").forEach((e) => {
       e.classList.add("light-btn");
     });
+    document.querySelector("#nav-icon").src = "../../../assets/icons/Neon-Nexus-Logo-Light.png"
   } else if (theme == "dark") {
     document.querySelector("main").classList.remove("light-main");
     document.querySelector("body").classList.remove("light-body");
-    document.querySelector(".main-h1").classList.remove("light-slogan");
+    document.querySelector(".main-h1").classList.remove("light-h1");
     document.querySelector(".popup-div").classList.remove("light-popup");
     document.querySelectorAll(".main-div").forEach((e) => {
       e.classList.remove("light-div");
@@ -29,6 +30,7 @@ function setTheme() {
     document.querySelectorAll(".cart-btn").forEach((e) => {
       e.classList.remove("light-btn");
     });
+    document.querySelector("#nav-icon").src = "../../../assets/icons/Neon-Nexus-Logo.png"
   }
 }
 

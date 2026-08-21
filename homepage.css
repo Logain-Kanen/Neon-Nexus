@@ -39,3 +39,13 @@
 main h2{
     margin-top: 5vh;
 }
+#about-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5%;
+}
+#about-div img{
+    max-width: 40%;
+
+}
