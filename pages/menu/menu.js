@@ -494,8 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
          <p>$${currentProduct.price}</p>
          <p>${currentProduct.itemDescription}</p>
       `;
-      }
-      else {
+      } else {
          card.innerHTML = `
          <img src="${imageSource}" alt="${currentProduct.name}" width="${cardSize.width}" height="${cardSize.height}"/>
          <h3>${currentProduct.name}</h3>
@@ -506,28 +505,48 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
          </div>
-         <p>$${currentProduct.price}
+         <p>$${currentProduct.price}</p>
          <p>${currentProduct.shortDescription}</p>
-         <button class="seeMorebtn" id="seeMoreBtn" onclick="expandMore("${currentProduct.id}")">See more</button>
+         <button class="seeMorebtn" data-id="${currentProduct.id}">See more</button>
       `;
+
+         const seeBtn = card.querySelector('.seeMorebtn');
+         if (seeBtn) {
+            seeBtn.addEventListener('click', () => expandMore(currentProduct.id));
+         }
       }
    });
 });
 
 function expandMore(productId) {
-   let popupModal = document.getElementById("popupModal");
-   menuProduct.forEach((popupModal, index) => {
-      if (menuProduct[index].id == productId) {
-         const currentProduct = menuProduct[index];
-         popupModal.innerHTML =
-            `
-            <h3>${currentProduct.name}</h3>
-            `;
-      }
+   const popupModal = document.getElementById("popupModal");
+   if (!popupModal) {
+      console.warn("Popup modal element not found");
+      return;
+   }
 
-   })
+   const currentProduct = menuProducts.find((p) => p.id === productId);
+   if (!currentProduct) {
+      console.warn("Product not found:", productId);
+      return;
+   }
 
+   const imageSource = currentProduct.images || "/assets/images/placeholder.jpg";
+   popupModal.innerHTML = `
+      <div class="popup-content">
+         <img src="${imageSource}" alt="${currentProduct.name}"/>
+         <h3>${currentProduct.name}</h3>
+         <p>$${currentProduct.price}</p>
+         <p>${currentProduct.itemDescription}</p>
+         <button class="addtoCart">Add to Cart</button>
+         <button class="closePopupBtn">Close</button>
+      </div>
+   `;
 
+   const closeBtn = popupModal.querySelector('.closePopupBtn');
+   if (closeBtn) {
+      closeBtn.addEventListener('click', () => { popupModal.innerHTML = ''; });
+   }
 }
 
-buildCategoryProducts()
+buildCategoryProducts();

@@ -1,155 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neon Nexus - Breakfast Menu</title>
-    <link rel="stylesheet" href="../../../shared/css/global.css" />
-    <link rel="stylesheet" href="../../../shared/css/navbar.css" />
-    <link rel="stylesheet" href="../../../shared/css/footer.css" />
-    <link rel="stylesheet" href="../menu.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="../../../shared/js/global.js" defer></script>
-    <script src="../../../shared/js/footer.js" defer></script>
-    <script src="../../products/products.js" defer></script>
-    <script src="../menu.js" defer></script>
-  </head>
 
-  <body onload="setTheme()">
-    <nav>
-      <a href="../../../index.html">
-        <img
-          src="../../../assets/icons/Neon-Nexus-Logo.png"
-          alt="Neon-Nexus"
-          id="nav-icon"
-        />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Nexus - Breakfast Menu</title>
+  <link rel="stylesheet" href="../../../shared/css/global.css" />
+  <link rel="stylesheet" href="../../../shared/css/navbar.css" />
+  <link rel="stylesheet" href="../../../shared/css/footer.css" />
+  <link rel="stylesheet" href="../menu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="../../../shared/js/global.js" defer></script>
+  <script src="../../../shared/js/footer.js" defer></script>
+  <script src="../../products/products.js" defer></script>
+  <script src="../menu.js" defer></script>
+</head>
 
-      <h1>Breakfast</h1>
-      <div id="nav-right">
-        <ul>
-          <li>
-            <a href="#">Menus</a>
-            <!-- First Tier Drop Down -->
-            <ul>
-              <li><a href="../breakfast/index.html">Breakfast</a></li>
-              <li><a href="../lunch/index.html">Lunch</a></li>
-              <li><a href="../dinner/index.html">Dinner</a></li>
-            </ul>
-          </li>
-        </ul>
-        <h2 id="nav-cart" onclick="openCart()">Cart</h2>
-      </div>
-    </nav>
+<body onload="setTheme()">
+  <nav>
+    <a href="../../../index.html">
+      <img src="../../../assets/icons/Neon-Nexus-Logo.png" alt="Neon-Nexus" id="nav-icon" />
+    </a>
 
-    <main>
-      <div id="popupModal"></div>
-      <div class="container-featured">
-        <h2 class="main-h1">Featured Items</h2>
-        <div class="featured-item">
-          <img src="/assets/images/Pancake.jpg" alt="Quantum Pancakes" width="400px" height="250px" />
-          <div class="contained-featured-item">
-            <h3>Quantum Pancakes</h3>
-            <div>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              maiores harum aliquam laudantium nulla unde ad delectus rerum
-              vitae quis iste alias, dicta repellendus hic quae reprehenderit
-              laboriosam nemo accusamus!
-            </p>
-            <button onclick="addToCart(`Quantum-Pancakes`)">Add to cart</button>
+    <h1>Breakfast</h1>
+    <div id="nav-right">
+      <ul>
+        <li>
+          <a href="#">Menus</a>
+          <!-- First Tier Drop Down -->
+          <ul>
+            <li><a href="../breakfast/index.html">Breakfast</a></li>
+            <li><a href="../lunch/index.html">Lunch</a></li>
+            <li><a href="../dinner/index.html">Dinner</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h2 id="nav-cart" onclick="openCart()">Cart</h2>
+    </div>
+  </nav>
+  <div id="popupModal"></div>
+  <main>
+    <div class="container-featured">
+      <h2 class="main-h1">Featured Items</h2>
+      <div class="featured-item">
+        <img src="/assets/images/Pancake.jpg" alt="Quantum Pancakes" width="400px" height="250px" />
+        <div class="contained-featured-item">
+          <h3>Quantum Pancakes</h3>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
           </div>
+
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            maiores harum aliquam laudantium nulla unde ad delectus rerum
+            vitae quis iste alias, dicta repellendus hic quae reprehenderit
+            laboriosam nemo accusamus!
+          </p>
+          <button onclick="addToCart(`Quantum-Pancakes`)">Add to cart</button>
         </div>
+      </div>
 
-        <div class="featured-item main-divb">
-          <img src="/assets/images/toast.jpg" alt="Circuit French Toast" width="400px" height="250px" />
-          <div class="itemcardsb">
-            <h3>Circuit French Toast</h3>
-            <div>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              provident beatae, delectus quasi excepturi, deleniti velit,
-              voluptas illo ipsum quis repellat. Aliquid pariatur fugiat odit
-              omnis eligendi? Cupiditate, nihil delectus.
-            </p>
-
-            <button onclick="addToCart(`Circuit-French-Toast`)">Add to cart</button>
+      <div class="featured-item main-divb">
+        <img src="/assets/images/toast.jpg" alt="Circuit French Toast" width="400px" height="250px" />
+        <div class="itemcardsb">
+          <h3>Circuit French Toast</h3>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
           </div>
-        </div>
 
-        <h2>Click for More Info!</h2>
-      </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            provident beatae, delectus quasi excepturi, deleniti velit,
+            voluptas illo ipsum quis repellat. Aliquid pariatur fugiat odit
+            omnis eligendi? Cupiditate, nihil delectus.
+          </p>
 
-      <div class="normal-items">
-        <section class="firstSection ">
-          <div class="item-cards"></div>
-
-          <div class="item-cards"></div>
-        </section>
-
-        <section class="secondSection">
-          <div class="item-cards"></div>
-
-          <div class="item-cards"></div>
-
-          <div class="item-cards"></div>
-        </section>
-
-        <section class="thirdSection">
-          <div class="item-cards"></div>
-
-          <div class="item-cards"></div>
-
-          <div class="item-cards"></div>
-        </section>
-
-        <section class="fourthSection">
-          <div class="item-cards"></div>
-
-          <div class="item-cards"></div>
-        </section>
-      </div>
-      <div class="popup-div">
-        <div id="cart-items"></div>
-        <div
-          id="close-btn"
-          class="cart-btn"
-          onclick="document.querySelector('.popup-div').style.display = 'none'"
-        >
-          Close
-        </div>
-        <div
-          id="to-checkout"
-          class="cart-btn"
-          onclick="window.location.replace('../../checkout/index.html')"
-        >
-          To Checkout
+          <button onclick="addToCart(`Circuit-French-Toast`)">Add to cart</button>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <a href="#top">Back to Top</a>
-      <p id="theme-switch" onclick="themeSwitch()">Switch Themes</p>
-      <p>&copy; 2026 Neon-Nexus diner. All rights reserved</p>
-    </footer>
-    
-    
-  </body>
+
+      <h2>Click for More Info!</h2>
+    </div>
+
+    <div class="normal-items">
+      <section class="firstSection ">
+        <div class="item-cards"></div>
+
+        <div class="item-cards"></div>
+      </section>
+
+      <section class="secondSection">
+        <div class="item-cards"></div>
+
+        <div class="item-cards"></div>
+
+        <div class="item-cards"></div>
+      </section>
+
+      <section class="thirdSection">
+        <div class="item-cards"></div>
+
+        <div class="item-cards"></div>
+
+        <div class="item-cards"></div>
+      </section>
+
+      <section class="fourthSection">
+        <div class="item-cards"></div>
+
+        <div class="item-cards"></div>
+      </section>
+    </div>
+    <div class="popup-div">
+      <div id="cart-items"></div>
+      <div id="close-btn" class="cart-btn" onclick="document.querySelector('.popup-div').style.display = 'none'">
+        Close
+      </div>
+      <div id="to-checkout" class="cart-btn" onclick="window.location.replace('../../checkout/index.html')">
+        To Checkout
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="#top">Back to Top</a>
+    <p id="theme-switch" onclick="themeSwitch()">Switch Themes</p>
+    <p>&copy; 2026 Neon-Nexus diner. All rights reserved</p>
+  </footer>
+
+
+</body>
+
 </html>
